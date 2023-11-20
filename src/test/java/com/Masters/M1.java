@@ -21,8 +21,8 @@ public class M1 extends RunningClass {
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("//button[contains (text(),' Create')]")).click();
 			Thread.sleep(1000);
-			driver.findElement(By.xpath("//*[@formcontrolname='documentCategory_Id']")).sendKeys("SOP");
-			Thread.sleep(1000);
+			// driver.findElement(By.xpath("//*[@formcontrolname='documentCategory_Id']")).sendKeys("SOP");
+			// Thread.sleep(1000);
 			driver.findElement(By.xpath("//*[@formcontrolname='documentTypes']")).sendKeys("Water Systems");
 			Thread.sleep(1000);
 			cm.Submit1();
