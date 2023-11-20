@@ -3,7 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import _01.MainPageClass.CommonPageClass;
-import _01.MainPageClass.RunningClass;
+import _01.MainPageClass.RunningClass;//changed
 
 public class S01_Document_Type_Feild_Mapping extends RunningClass {
 	@Test
