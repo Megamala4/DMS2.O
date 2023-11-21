@@ -29,13 +29,13 @@ public class RunningClass {
 	public static WebDriver driver;
 	protected static Properties Pro;
 	public static Xls_Reader xls1 = new Xls_Reader(
-			"C:\\Users\\sheshu.vunnam\\eclipse-workspace5\\DMS2.0 1\\DMS2.0\\src\\test\\resources\\Properties\\Excel\\EXCEL.xlsx");
+			"C:\\Users\\sheshu.vunnam\\eclipse-workspace5\\DMS2.0 1\\DMS2.0\\src\\test\\resources\\Properties\\Excel\\PROJECTEXCEL.xlsx");
 
 	@BeforeMethod(alwaysRun = true)
 	public void URL_Load() throws Exception {
 		Properties Pro = new Properties();
 		FileInputStream ip = new FileInputStream(
-				"C:\\Users\\sheshu.vunnam\\eclipse-workspace5\\DMS2.0 1\\DMS2.0\\src\\test\\resources\\Properties\\Config");
+				"C:\\Users\\sheshu.vunnam\\eclipse-workspace5\\DMS2.0 1\\DMS2.0\\src\\test\\resources\\Properties\\config.properties");
 		Pro.load(ip);
 		WebDriverManager.chromedriver().setup();
 		System.setProperty("webdriver.http.factory", "jdk-http-client");
