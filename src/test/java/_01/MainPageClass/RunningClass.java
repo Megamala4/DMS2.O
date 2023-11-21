@@ -1,4 +1,5 @@
 package _01.MainPageClass;
+
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
@@ -75,8 +76,9 @@ public class RunningClass {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 			Thread.sleep(1000);
-		}																					
+		}
 		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//*[contains(text(),'Document Management System')]")).click();
 		System.out.println("terminating");
 		Thread.sleep(1000);

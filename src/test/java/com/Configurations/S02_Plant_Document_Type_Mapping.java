@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import _01.MainPageClass.CommonPageClass;
+import _01.MainPageClass.PomClass;
 import _01.MainPageClass.RunningClass;
 
 public class S02_Plant_Document_Type_Mapping extends RunningClass {
@@ -14,19 +15,23 @@ public class S02_Plant_Document_Type_Mapping extends RunningClass {
 		for (int i = 2; i <= 2; i++) {
 //*************************************************************************************************************************************
 			CommonPageClass cm = new CommonPageClass(driver);
+			PomClass pm = new PomClass(driver);
 			String userame = xls1.getCellData("Credentials", "UserName", i);
 			String password = xls1.getCellData("Credentials", "Password", i);
-			String A = xls1.getCellData("Configuration", "Select Doc Category", i);
+			String department = xls1.getCellData("Configuration", "Department", i);
+			String documentCategory = xls1.getCellData("Configuration", "Select Doc Category", i);
+			String DocumentType = xls1.getCellData("Configuration", "Select Doc Type", i);
+			String A = xls1.getCellData("Configuration", "", i);
+
 //************************************************************************************************************************************			
 			Login(userame, password);
-			driver.findElement(By.xpath("//*[contains (text(),'Configuration ')]")).click();
-			Thread.sleep(1000);
-			driver.findElement(By.xpath("/html/body/app-root/div/app-layout/nav/div/ul[2]/li[2]/ul/li[2]/span/a")).click();
-			Thread.sleep(1000);
-			driver.findElement(By.xpath("(//*[contains (text(),'Plant Document Type Mapping')])[3]")).click();
-			Thread.sleep(1000);
-			driver.findElement(By.xpath("//button[contains (text(),' Create')]")).click();
-			Thread.sleep(1000);
+			pm.Configurations_Click();
+			pm.Plant_Document_Type_Mapping();
+			driver.findElement(By.xpath("(//*[contains(text(),'Plant Document Type Mapping')])[3]")).click();
+			cm.Create1();
+			pm.Department_Id(department);
+			pm.DocumentCategoryId_Click(documentCategory);
+//			pm.class="dropdown-btn"
 		}
 	}
 }
