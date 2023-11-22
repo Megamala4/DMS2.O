@@ -1,8 +1,6 @@
 package com.Masters;
-
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-
 import _01.MainPageClass.CommonPageClass;
 import _01.MainPageClass.RunningClass;
 

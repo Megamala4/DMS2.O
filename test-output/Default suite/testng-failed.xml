@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Configurations.S02_Plant_Document_Type_Mapping">
+      <class name="com.Configurations.ReviewperiodMagnagement">
         <methods>
           <include name="URL_Load"/>
           <include name="A"/>
         </methods>
-      </class> <!-- com.Configurations.S02_Plant_Document_Type_Mapping -->
+      </class> <!-- com.Configurations.ReviewperiodMagnagement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -22,16 +22,11 @@ public class Documentversionmanagement extends RunningClass{
 		for (int i = 2; i <= 2; i++) {
 			String username = xls1.getCellData("LOGINPAGE ", "Admin", i);
 			String password = xls1.getCellData("LOGINPAGE", "Password", i);
-			Login(username, password);
-			
-			
+			Login(username, password);	
 			String department = xls1.getCellData("LOGINPAGE", "department", i);
 			String document = xls1.getCellData("LOGINPAGE", "document", i);
 			String documentid = xls1.getCellData("LOGINPAGE", "documentid ", i);
-			String noofdigits = xls1.getCellData("LOGINPAGE", "noofdigits", i);
-			
-			
-			CP.config();
+			String noofdigits = xls1.getCellData("LOGINPAGE", "noofdigits", i);		CP.config();
 			CP.config3();
 			Actions actions = new Actions(driver);
 		    WebElement Move = driver.findElement(By.xpath("//*[contains (text(),'Deparment')]"));

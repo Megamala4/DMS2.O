@@ -20,18 +20,24 @@ public class S02_Plant_Document_Type_Mapping extends RunningClass {
 			String password = xls1.getCellData("Credentials", "Password", i);
 			String department = xls1.getCellData("Configuration", "Department", i);
 			String documentCategory = xls1.getCellData("Configuration", "Select Doc Category", i);
-			String DocumentType = xls1.getCellData("Configuration", "Select Doc Type", i);
-			String A = xls1.getCellData("Configuration", "", i);
+			//String DocumentType = xls1.getCellData("Configuration", "Select Doc Type", i);
+			//String A = xls1.getCellData("Configuration", "", i);
 
 //************************************************************************************************************************************			
 			Login(userame, password);
 			pm.Configurations_Click();
+			
+			
 			pm.Plant_Document_Type_Mapping();
 			driver.findElement(By.xpath("(//*[contains(text(),'Plant Document Type Mapping')])[3]")).click();
 			cm.Create1();
 			pm.Department_Id(department);
 			pm.DocumentCategoryId_Click(documentCategory);
-//			pm.class="dropdown-btn"
+			driver.findElement(By.xpath("//*[@class='dropdown-btn']")).click();
+			cm.CheckBox1();
+			driver.findElement(By.xpath("//*[@class='dropdown-btn']")).click();
+			cm.Create1();
+			CreateFun();
 		}
 	}
 }

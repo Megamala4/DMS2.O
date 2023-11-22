@@ -1,5 +1,4 @@
 package _01.MainPageClass;
-
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
@@ -10,7 +9,6 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -21,21 +19,29 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeMethod;
-import fr.opensagres.poi.xwpf.converter.pdf.PdfConverter;
-import fr.opensagres.poi.xwpf.converter.pdf.PdfOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class RunningClass {
 	public static WebDriver driver;
 	protected static Properties Pro;
-	public static Xls_Reader xls1 = new Xls_Reader(
-			"C:\\Users\\sheshu.vunnam\\eclipse-workspace5\\DMS2.0 1\\DMS2.0\\src\\test\\resources\\Properties\\Excel\\PROJECTEXCEL.xlsx");
+//********************************************************************************************************************************************************
+//	static String Excel = "C:\\Users\\sharuk.k\\eclipse-workspaceOOS\\DMS2.0\\src\\test\\resources\\Properties\\Excel\\EXCEL.xlsx";
+static String Excel="C:\\Users\\sheshu.vunnam\\eclipse-workspace5\\DMS2.0 1\\DMS2.0\\src\\test\\resources\\Properties\\Excel\\PROJECTEXCEL.xlsx";
+
+//********************************************************************************************************************************************************
+
+	public static Xls_Reader xls1 = new Xls_Reader(Excel); 
 
 	@BeforeMethod(alwaysRun = true)
 	public void URL_Load() throws Exception {
 		Properties Pro = new Properties();
-		FileInputStream ip = new FileInputStream(
-				"C:\\Users\\sheshu.vunnam\\eclipse-workspace5\\DMS2.0 1\\DMS2.0\\src\\test\\resources\\Properties\\config.properties");
+
+//********************************************************************************************************************************************************
+//		String Configuration = "C:\\Users\\sharuk.k\\eclipse-workspaceOOS\\DMS2.0\\src\\test\\resources\\Properties\\config.properties";
+String Configuration = "C:\\Users\\sheshu.vunnam\\eclipse-workspace5\\DMS2.0 1\\DMS2.0\\src\\test\\resources\\Properties\\config.properties";
+//********************************************************************************************************************************************************
+
+		FileInputStream ip = new FileInputStream(Configuration);
 		Pro.load(ip);
 		WebDriverManager.chromedriver().setup();
 		System.setProperty("webdriver.http.factory", "jdk-http-client");

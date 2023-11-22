@@ -1,9 +1,5 @@
 package com.Configurations;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
-
 import _01.MainPageClass.CommonPageClass;
 import _01.MainPageClass.PomClass;
 import _01.MainPageClass.RunningClass;//changed
