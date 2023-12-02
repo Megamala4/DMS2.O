@@ -1,8 +1,9 @@
-package com.Configurations;
+package _003_com.Configurations;
 import org.testng.annotations.Test;
-import _01.MainPageClass.CommonPageClass;
-import _01.MainPageClass.PomClass;
-import _01.MainPageClass.RunningClass;//changed
+
+import _001.MainPageClass.CommonPageClass;
+import _001.MainPageClass.PomClass;
+import _001.MainPageClass.RunningClass;
 
 public class S01_Document_Type_Feild_Mapping extends RunningClass {
 	@Test
@@ -15,19 +16,19 @@ public class S01_Document_Type_Feild_Mapping extends RunningClass {
 			PomClass pm = new PomClass(driver);
 			String userame = xls1.getCellData("Credentials", "UserName", i);
 			String password = xls1.getCellData("Credentials", "Password", i);
-			String A = xls1.getCellData("Configuration", "Select Doc Category", i);
-			String B = xls1.getCellData("Configuration", "Select Doc Type", i);
+			String selectDocCategory = xls1.getCellData("Configurations", "Select Doc Category", i);
+			String selectDocType = xls1.getCellData("Configurations", "SelectDoc Type", i);
 //************************************************************************************************************************************			
 			Login(userame, password);
 			pm.Configurations_Click();
 			pm.Document_Type_Feild_Mapping_Click();
 			pm.Configurations_Click();
-			pm.DocumentCategoryId_Click(A);
-			pm.DocumenType_Id(B);
+			pm.DocumentCategoryId_Click(selectDocCategory);Thread.sleep(2000);
+			pm.DocumenType_Id(selectDocType);
 			cm.CheckBox1();
 			cm.CheckBox2();
 			pm.Switch_Click();
-			cm.Submit1();
+			//cm.Submit1(); 
 			CreateFun();
 		}
 	}

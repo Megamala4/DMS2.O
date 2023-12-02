@@ -1,80 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-22T14:14:35 IST" name="Default suite" finished-at="2023-11-22T14:14:35 IST" duration-ms="36">
+  <suite started-at="2023-12-02T10:28:15 IST" name="Default suite" finished-at="2023-12-02T10:28:45 IST" duration-ms="30442">
     <groups>
     </groups>
-    <test started-at="2023-11-22T14:14:35 IST" name="Default test" finished-at="2023-11-22T14:14:35 IST" duration-ms="36">
-      <class name="com.Configurations.ReviewperiodMagnagement">
-        <test-method is-config="true" signature="URL_Load()[pri:0, instance:com.Configurations.ReviewperiodMagnagement@661972b0]" started-at="2023-11-22T14:14:35 IST" name="URL_Load" finished-at="2023-11-22T14:14:35 IST" duration-ms="3" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
-            <message>
-              <![CDATA[C:\Users\sheshu.vunnam\eclipse-workspace5\DMS2.0 1\DMS2.0\src\test\resources\Properties\config.properties (The system cannot find the path specified)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\sheshu.vunnam\eclipse-workspace5\DMS2.0 1\DMS2.0\src\test\resources\Properties\config.properties (The system cannot find the path specified)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-at _01.MainPageClass.RunningClass.URL_Load(RunningClass.java:44)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+    <test started-at="2023-12-02T10:28:15 IST" name="Default test" finished-at="2023-12-02T10:28:45 IST" duration-ms="30442">
+      <class name="_002_com.Masters.M3">
+        <test-method is-config="true" signature="URL_Load()[pri:0, instance:_002_com.Masters.M3@39a2bb97]" started-at="2023-12-02T10:28:15 IST" name="URL_Load" finished-at="2023-12-02T10:28:21 IST" duration-ms="5954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- URL_Load -->
-        <test-method signature="A()[pri:0, instance:com.Configurations.ReviewperiodMagnagement@661972b0]" started-at="2023-11-22T14:14:35 IST" name="A" finished-at="2023-11-22T14:14:35 IST" duration-ms="0" status="SKIP">
-          <exception class="java.io.FileNotFoundException">
+        <test-method signature="A()[pri:0, instance:_002_com.Masters.M3@39a2bb97]" started-at="2023-12-02T10:28:21 IST" name="A" finished-at="2023-12-02T10:28:45 IST" duration-ms="24447" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[C:\Users\sheshu.vunnam\eclipse-workspace5\DMS2.0 1\DMS2.0\src\test\resources\Properties\config.properties (The system cannot find the path specified)]]>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'AILT-100416', ip: '10.50.53.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [caaee559cf60900ed464c478739dd7d2, findElement {using=xpath, value=//button[contains (text(),'Yes')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\sharuk.k\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58252}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58252/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: caaee559cf60900ed464c478739dd7d2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: C:\Users\sheshu.vunnam\eclipse-workspace5\DMS2.0 1\DMS2.0\src\test\resources\Properties\config.properties (The system cannot find the path specified)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:111)
-at _01.MainPageClass.RunningClass.URL_Load(RunningClass.java:44)
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=119.0.6045.200)
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: 'AILT-100416', ip: '10.50.53.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [caaee559cf60900ed464c478739dd7d2, findElement {using=xpath, value=//button[contains (text(),'Yes')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.200, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\sharuk.k\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58252}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58252/devtoo..., se:cdpVersion: 119.0.6045.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: caaee559cf60900ed464c478739dd7d2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1258)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at _002_com.Masters.M3.A(M3.java:34)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -99,11 +76,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- A -->
-      </class> <!-- com.Configurations.ReviewperiodMagnagement -->
+      </class> <!-- _002_com.Masters.M3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

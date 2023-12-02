@@ -1,4 +1,5 @@
-package _01.MainPageClass;
+package _001.MainPageClass;
+
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
@@ -24,21 +25,18 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class RunningClass {
 	public static WebDriver driver;
 	protected static Properties Pro;
-//********************************************************************************************************************************************************
-//	static String Excel = "C:\\Users\\sharuk.k\\eclipse-workspaceOOS\\DMS2.0\\src\\test\\resources\\Properties\\Excel\\EXCEL.xlsx";
-static String Excel="C:\\Users\\sheshu.vunnam\\eclipse-workspace5\\DMS2.0 1\\DMS2.0\\src\\test\\resources\\Properties\\Excel\\PROJECTEXCEL.xlsx";
-
-//********************************************************************************************************************************************************
-
-	public static Xls_Reader xls1 = new Xls_Reader(Excel); 
+	
+	public static Xls_Reader xls1 = new Xls_Reader("C:\\Users\\sharuk.k\\eclipse-workspaceOOS\\DMS2.0\\src\\test\\resources\\Properties\\Excel\\EXCEL.xlsx");
 
 	@BeforeMethod(alwaysRun = true)
+	
+	
 	public void URL_Load() throws Exception {
 		Properties Pro = new Properties();
 
 //********************************************************************************************************************************************************
 //		String Configuration = "C:\\Users\\sharuk.k\\eclipse-workspaceOOS\\DMS2.0\\src\\test\\resources\\Properties\\config.properties";
-String Configuration = "C:\\Users\\sheshu.vunnam\\eclipse-workspace5\\DMS2.0 1\\DMS2.0\\src\\test\\resources\\Properties\\config.properties";
+String Configuration = "C:\\Users\\sharuk.k\\eclipse-workspaceOOS\\DMS2.0\\src\\test\\resources\\Properties\\config.properties";
 //********************************************************************************************************************************************************
 
 		FileInputStream ip = new FileInputStream(Configuration);
@@ -51,6 +49,7 @@ String Configuration = "C:\\Users\\sheshu.vunnam\\eclipse-workspace5\\DMS2.0 1\\
 		Thread.sleep(2000);
 	}
 
+//8888
 	@SuppressWarnings("deprecation")
 	public static void Login(String username, String password) throws Exception {
 
@@ -62,7 +61,7 @@ String Configuration = "C:\\Users\\sheshu.vunnam\\eclipse-workspace5\\DMS2.0 1\\
 		}
 		Thread.sleep(1000);
 //		driver.findElement(By.xpath("(//button[contains(text(),'Login')])[2]")).click();
-//		Thread.sleep(1000);
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[@formcontrolname='LoginId']")).sendKeys(username);
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[contains(text(),'Login')]")).click();

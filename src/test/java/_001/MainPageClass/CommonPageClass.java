@@ -1,4 +1,4 @@
-package _01.MainPageClass;
+package _001.MainPageClass;
 
 import java.util.concurrent.TimeUnit;
 
@@ -276,6 +276,14 @@ public class CommonPageClass {
 	public void CheckBox4() throws Exception {
 		RadioButton4.click();
 	}
+	
+	//radio button - Select All
+		@FindBy(how = How.XPATH, using = "//*[contains(text(),'Select All')]")
+		public WebElement CheckBoxSelectAll;
+
+		public void CheckBoxSelectAll() throws Exception {
+			CheckBoxSelectAll.click();
+		}
 
 //**************************************** #endregion For - Radio Buttons *************************************************************
 

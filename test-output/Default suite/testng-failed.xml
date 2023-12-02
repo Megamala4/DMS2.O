@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Configurations.ReviewperiodMagnagement">
+      <class name="_002_com.Masters.M3">
         <methods>
-          <include name="URL_Load"/>
           <include name="A"/>
+          <include name="URL_Load"/>
         </methods>
-      </class> <!-- com.Configurations.ReviewperiodMagnagement -->
+      </class> <!-- _002_com.Masters.M3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

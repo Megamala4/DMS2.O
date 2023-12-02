@@ -1,4 +1,4 @@
-package _01.MainPageClass;
+package _001.MainPageClass;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class PomClass {
 	public WebDriver driver;
@@ -39,7 +40,8 @@ public class PomClass {
 	public void DocumentCategoryId_Click(String X) throws Exception {
 		Thread.sleep(1000);
 		DocumentCategoryId_Click.click();
-		DocumentCategoryId_Click.sendKeys(X,Keys.ENTER);
+		Thread.sleep(1000);
+		DocumentCategoryId_Click.sendKeys(X, Keys.ENTER);
 		Thread.sleep(1000);
 	}
 
@@ -49,7 +51,12 @@ public class PomClass {
 	public void DocumenType_Id(String X) throws Exception {
 		Thread.sleep(1000);
 		DocumenType_Id.click();
-		DocumenType_Id.sendKeys(X,Keys.ENTER);
+		Thread.sleep(1000);
+		DocumenType_Id.sendKeys(X);
+		DocumenType_Id.sendKeys(Keys.ENTER);
+//		Select s = new Select(DocumenType_Id);
+//		s.selectByVisibleText(X);
+//		((WebElement) s).sendKeys(Keys.ENTER);
 		Thread.sleep(1000);
 	}
 
